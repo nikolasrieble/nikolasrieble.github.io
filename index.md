@@ -1,3 +1,3 @@
-![Avatar](/nikolasrieble.github.io/assets/Avater.png)
+![Avatar](/assets/Avater.png)
 
 <a href="./about">About me</a>
