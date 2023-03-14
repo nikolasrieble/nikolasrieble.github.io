@@ -1,0 +1,14 @@
+.intro{
+    color: grey;
+    font: 2em "Montserrat", sans-serif;
+    fontSize: 40;
+}
+
+.centered{
+    width: 50%;
+    margin: auto;
+}
+
+.profile {
+    height:20vh;
+}
