@@ -8,7 +8,7 @@
 }
 
 .profile {
-    height: 15vw;
+    height: 20vw;
 }
 
 /* Add a black background color to the top navigation */
@@ -92,7 +92,12 @@ a {
 
 /* Hide image on mobile */
 @media only screen and (max-width: 768px) {
-    .image {
-        display: block;
+    .leftcolumn {
+        width: 100%;
+
     }
+    .rightcolumn {
+        width: 0;
+    }
+
 }
