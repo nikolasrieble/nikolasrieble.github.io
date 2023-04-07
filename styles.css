@@ -24,10 +24,11 @@
 /* Style the links inside the navigation bar */
 .navigation a {
     color: #f2f2f2;
-    text-align: center;
     text-decoration: none;
     font-size: 17px;
-
+    /*    Right align text*/
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Change the color of links on hover */
@@ -87,7 +88,7 @@ a {
 }
 
 .head {
-    display: inline-block;
+    display: inline-flex;
 }
 
 /* Hide image on mobile */
