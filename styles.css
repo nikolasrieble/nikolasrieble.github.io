@@ -44,6 +44,7 @@
 
 .image {
     width: 100%;
+    max-height: 100%;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -54,7 +55,7 @@
 }
 
 .row:hover > .rightcolumn {
-    display: block;
+    display: inline-flex;
 }
 
 /* Right column */
