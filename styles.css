@@ -82,6 +82,16 @@ a {
     color: black;
 }
 
+.links {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: grey;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
