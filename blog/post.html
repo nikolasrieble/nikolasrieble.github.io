@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Blog Post</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+<div class="centered" id="content">
+    Loading...
+</div>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const post = params.get('post');
+    if (post) {
+        fetch(post + '.md')
+            .then(response => response.text())
+            .then(markdown => {
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+            })
+            .catch(() => {
+                document.getElementById('content').innerHTML = '<p>Post not found.</p>';
+            });
+    }
+</script>
+</body>
+</html>
