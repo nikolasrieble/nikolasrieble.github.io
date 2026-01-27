@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Backups
+*.bak
+*.tmp
+*.swp
+
+# Editor directories
+.vscode/
+.idea/
+
+# Node modules (if any)
+node_modules/
