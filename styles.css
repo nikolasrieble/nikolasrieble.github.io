@@ -1,6 +1,58 @@
 .intro {
     font-size: 4vw;
     color: #444;
+    margin-bottom: 1em;
+}
+
+.about-content {
+    margin-top: 2em;
+}
+
+.about-content h2 {
+    color: #222;
+    font-size: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #42eadd;
+    padding-bottom: 0.3em;
+}
+
+.about-content p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background-color: #42eadd;
+    color: #222;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #2dd4c7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(66, 234, 221, 0.3);
+}
+
+.contact-icon {
+    font-size: 1.2em;
 }
 
 .centered {
