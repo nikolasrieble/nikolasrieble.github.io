@@ -1,0 +1,10 @@
+{% assign nav = page.nav_active | default: layout.nav_active %}
+<div class="head">
+    <ul class="navigation">
+        <li><a {% if nav == "blog" %}class="active" {% endif %}href="/blog/">Blog</a></li>
+        <li><a {% if nav == "servus" %}class="active" {% endif %}href="/">Servus</a></li>
+    </ul>
+    <img alt="Avatar"
+         class="profile"
+         src="/avatar.png">
+</div>

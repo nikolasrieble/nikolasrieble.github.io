@@ -1,0 +1,17 @@
+title: Nikolas Rieble
+description: "Nikolas Rieble — leading teams, writing about software engineering."
+url: "https://rieble.com"
+permalink: /blog/:title/
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+include:
+  - CNAME
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post

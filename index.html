@@ -1,26 +1,22 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikolas Rieble</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-<div class="head">
-    <ul class="navigation">
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a class="active" href="./index.html">Servus</a></li>
-    </ul>
-    <img alt="Avatar"
-         class="profile"
-         src="avatar.png">
-</div>
+---
+layout: default
+title: Nikolas Rieble
+nav_active: servus
+---
 <div class="centered">
     <h1 class="name">Nikolas Rieble</h1>
     <p class="local-tagline">🥨 München</p>
     <p class="about-intro">Leading teams. Writing about software engineering.</p>
-    <p class="blog-bridge" id="latest-post"></p>
+    {% assign latest = site.posts | first %}
+    {% if latest %}
+    <p class="blog-bridge">
+        {% if latest.external_url %}
+        <a href="{{ latest.external_url }}">Latest: {{ latest.title }} →</a>
+        {% else %}
+        <a href="{{ latest.url }}">Latest: {{ latest.title }} →</a>
+        {% endif %}
+    </p>
+    {% endif %}
     <div class="contact-links">
         <a href="mailto:nikolas@rieble.com" class="contact-icon-link" title="Email">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -44,21 +40,3 @@
         </a>
     </div>
 </div>
-<script>
-    fetch('./posts.json')
-        .then(r => r.json())
-        .then(posts => {
-            const latest = posts[0];
-            const el = document.getElementById('latest-post');
-            const href = latest.slug.startsWith('external:')
-                ? latest.slug.slice(9)
-                : './blog/post.html?post=' + latest.slug;
-            const a = document.createElement('a');
-            a.href = href;
-            a.textContent = 'Latest: ' + latest.title + ' →';
-            el.appendChild(a);
-        })
-        .catch(() => {});
-</script>
-</body>
-</html>

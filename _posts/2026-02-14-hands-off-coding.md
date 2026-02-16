@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Hands-Off Coding"
+date: 2026-02-14
+summary: "Software engineer economics are broken. Everything will change. Here is what changed for me so far."
+---
+
 # Hands-Off Coding
 
 TLDR: Software engineer economics are broken. Everything will change. Here is what changed for me so far. Feel free to use [my resources](https://github.com/nikolasrieble/opencode-config) for your own workflow.

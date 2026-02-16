@@ -1,0 +1,24 @@
+---
+layout: default
+title: Page Not Found
+nav_active: ""
+permalink: /404.html
+---
+<div class="centered">
+    <h1>Page not found</h1>
+    <p>Sorry, this page doesn't exist.</p>
+    <p><a href="/">Go home</a></p>
+</div>
+<script>
+    // Redirect legacy ?post= URLs to new clean URLs
+    var defined = {
+        'handsOffCoding': '/blog/hands-off-coding/',
+        'talkingTotheAI': '/blog/talking-to-the-ai/',
+        '20230407_storybook_a_love_story': '/blog/storybook-a-love-story/'
+    };
+    var params = new URLSearchParams(window.location.search);
+    var post = params.get('post');
+    if (post && defined[post]) {
+        window.location.replace(defined[post]);
+    }
+</script>

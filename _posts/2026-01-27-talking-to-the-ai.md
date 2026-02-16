@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Talking to the AI"
+date: 2026-01-27
+summary: "Exploring how AI responses vary with subtle prompt changes, and why understanding this matters when using language models."
+---
+
 # Talking to the AI
 
 Humans enjoy talking to the AI. One can for example [ask for the three most important books](https://x.com/BecomingCritter/status/2014708351246962914), and stand surprised that they align with some of what you expected.
