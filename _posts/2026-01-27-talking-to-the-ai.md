@@ -5,8 +5,6 @@ date: 2026-01-27
 description: "Exploring how AI responses vary with subtle prompt changes, and why understanding this matters when using language models."
 ---
 
-# Talking to the AI
-
 Humans enjoy talking to the AI. One can for example [ask for the three most important books](https://x.com/BecomingCritter/status/2014708351246962914), and stand surprised that they align with some of what you expected.
 
 ## You are talking to yourself
@@ -70,7 +68,7 @@ The slightest changes to prompts can change the outcome.
 
 I do not consider this to be a problem though. It is merely a property of the answer machine that we are playing with. If we want to use the answer machine for anything serious, we need to be aware of this phenomenon and - depending on the use case - investigate guard rails.
 
-# Appendix
+## Appendix
 
 As always, things are a bit more complex. For full transparency, here you can find all queries used and outputs generated.
 I used Haiku 4.5 on Monday, 26th of January 2026 in the incognito mode.

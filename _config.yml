@@ -1,6 +1,7 @@
 title: Nikolas Rieble
 description: "Nikolas Rieble — leading teams, writing about software engineering."
 url: "https://rieble.com"
+author: Nikolas Rieble
 permalink: /blog/:title/
 markdown: kramdown
 plugins:
@@ -12,6 +13,10 @@ include:
   - CNAME
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /avatar.png
   - scope:
       path: ""
       type: "posts"

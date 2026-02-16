@@ -5,10 +5,6 @@ date: 2023-04-07
 description: "A storybook-first approach improves developer experience, velocity and quality of the codebase."
 ---
 
-# Storybook - A love story
-
-2023-04-07, Storybook, Tests, React, Recharts, Tulip Interfaces
-
 This is a story about how I fell in love with Storybook. I started using React two years ago when I joined [Tulip Interfaces](https://tulip.co/). We use storybook to document our shared components. A storybook-first approach improves developer experience, velocity and quality of the codebase. I became contributor to [recharts](https://recharts.org/en-US/storybook). Here storybook helps us to ship changes to a complex and popular library with confidence.
 
 ## An encapsulated development environment

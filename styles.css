@@ -247,6 +247,13 @@ body {
     color: #444;
 }
 
+.post-meta {
+    color: #888;
+    font-size: 0.9em;
+    margin-top: -0.5em;
+    margin-bottom: 2em;
+}
+
 .back-to-blog {
     margin-top: 3em;
     padding-top: 1.5em;
