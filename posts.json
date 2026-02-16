@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "handsOffCoding",
+    "title": "Hands-Off Coding",
+    "date": "2026-02-14",
+    "summary": "Software engineer economics are broken. Everything will change. Here is what changed for me so far."
+  },
+  {
+    "slug": "talkingTotheAI",
+    "title": "Talking to the AI",
+    "date": "2026-01-27",
+    "summary": "Exploring how AI responses vary with subtle prompt changes, and why understanding this matters when using language models."
+  },
+  {
+    "slug": "20230407_storybook_a_love_story",
+    "title": "Storybook - A love story",
+    "date": "2023-04-07",
+    "summary": "A storybook-first approach improves developer experience, velocity and quality of the codebase."
+  },
+  {
+    "slug": "external:https://tulip.co/blog/how-tulip-is-modernising-its-analytics-platform-with-recharts/",
+    "title": "How Tulip is Modernising its Analytics Platform with Recharts",
+    "date": "2023-03-09",
+    "summary": "Recharts we discovered, is easy to use, fits right into our React codebase. Recharts default behaviour enables a quick migration from Plotly, unblocking us from adding advanced visualisation features."
+  }
+]

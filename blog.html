@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Nikolas Rieble</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="head">
+    <ul class="navigation">
+        <li><a class="active" href="./blog.html">Blog</a></li>
+        <li><a href="./index.html">Servus</a></li>
+    </ul>
+    <img alt="Avatar"
+         class="profile"
+         src="avatar.png">
+</div>
+<div id="posts"></div>
+<script>
+    fetch('./posts.json')
+        .then(r => r.json())
+        .then(posts => {
+            const container = document.getElementById('posts');
+            posts.forEach(post => {
+                const href = post.slug.startsWith('external:')
+                    ? post.slug.slice(9)
+                    : './blog/post.html?post=' + post.slug;
+                const row = document.createElement('div');
+                row.className = 'row centered';
+                const col = document.createElement('div');
+                col.className = 'leftcolumn';
+                const h2 = document.createElement('h2');
+                h2.className = 'blogtitle';
+                const a = document.createElement('a');
+                a.href = href;
+                a.textContent = post.title;
+                h2.appendChild(a);
+                const h5 = document.createElement('h5');
+                h5.textContent = post.date;
+                const p = document.createElement('p');
+                p.textContent = post.summary;
+                col.append(h2, h5, p);
+                row.appendChild(col);
+                container.appendChild(row);
+            });
+        })
+        .catch(() => {
+            document.getElementById('posts').innerHTML =
+                '<div class="row centered"><p>Could not load posts.</p></div>';
+        });
+</script>
+</body>
+</html>
