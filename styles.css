@@ -262,4 +262,8 @@ body {
     .leftcolumn {
         width: 100%;
     }
+
+    .head {
+        justify-content: flex-end;
+    }
 }
