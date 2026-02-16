@@ -247,6 +247,23 @@ body {
     color: #444;
 }
 
+.back-to-blog {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid #eee;
+}
+
+.back-to-blog a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.back-to-blog a:hover {
+    color: #42eadd;
+}
+
 .head {
     display: flex;
     flex-wrap: wrap;

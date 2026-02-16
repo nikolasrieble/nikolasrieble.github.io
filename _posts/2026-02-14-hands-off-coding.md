@@ -2,7 +2,7 @@
 layout: post
 title: "Hands-Off Coding"
 date: 2026-02-14
-summary: "Software engineer economics are broken. Everything will change. Here is what changed for me so far."
+description: "Software engineer economics are broken. Everything will change. Here is what changed for me so far."
 ---
 
 # Hands-Off Coding

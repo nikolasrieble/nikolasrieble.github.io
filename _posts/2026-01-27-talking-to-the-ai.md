@@ -2,7 +2,7 @@
 layout: post
 title: "Talking to the AI"
 date: 2026-01-27
-summary: "Exploring how AI responses vary with subtle prompt changes, and why understanding this matters when using language models."
+description: "Exploring how AI responses vary with subtle prompt changes, and why understanding this matters when using language models."
 ---
 
 # Talking to the AI

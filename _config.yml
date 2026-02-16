@@ -6,6 +6,8 @@ markdown: kramdown
 plugins:
   - jekyll-seo-tag
   - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-sitemap
 include:
   - CNAME
 
