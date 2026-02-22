@@ -34,19 +34,20 @@
 .contact-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 12px 24px;
     margin-top: 1.2em;
     justify-content: center;
 }
 
 .contact-icon-link {
-    display: inline-flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
     color: #666;
     text-decoration: none;
     transition: color 0.3s ease;
+    white-space: nowrap;
 }
 
 .contact-icon-link:hover {
@@ -54,12 +55,13 @@
 }
 
 .contact-icon-link svg {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
 }
 
 .contact-icon-label {
-    font-size: 0.7em;
+    font-size: 0.85em;
     letter-spacing: 0.02em;
 }
 
