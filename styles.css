@@ -41,24 +41,26 @@
 
 .contact-icon-link {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
+    gap: 5px;
     color: #666;
     text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 24px;
+    transition: color 0.3s ease;
 }
 
 .contact-icon-link:hover {
     color: #42eadd;
-    transform: scale(1.2);
 }
 
 .contact-icon-link svg {
     width: 24px;
     height: 24px;
+}
+
+.contact-icon-label {
+    font-size: 0.7em;
+    letter-spacing: 0.02em;
 }
 
 .centered {
